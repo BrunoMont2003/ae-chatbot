@@ -1,6 +1,6 @@
-# Template for TS API
+# ae-chatbot
 
-Basic template and scaffolding to build an API in Typescript using Express as framework. __Only for reference__.
+Chatbot API powered with OpenAI.
 
 ## Tecnologies
 
