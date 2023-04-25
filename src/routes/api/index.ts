@@ -1,11 +1,9 @@
-import { Response, Router } from "express";
+import ChatRoutes from "./chat.routes";
 
-const router: Router = Router();
+import { Router } from "express";
 
-router.get("/", (_, res: Response) => {
-	res.status(200).json({
-		msg: "Access from API routes",
-	});
-});
+const router = Router();
+
+router.use(ChatRoutes);
 
 export { router };

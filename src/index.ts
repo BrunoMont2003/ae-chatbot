@@ -1,8 +1,7 @@
 import { app } from "./app";
-
-const PORT = process.env.PORT || 3333;
+import config from "./config/general.configs";
 
 //listen port
-app.listen(PORT, () => {
-	console.log(`Listening on port http://localhost:${PORT}`);
+app.listen(config.api.port, () => {
+	console.log(`Listening on port http://localhost:${config.api.port}`);
 });
