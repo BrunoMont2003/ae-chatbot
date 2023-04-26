@@ -16,3 +16,45 @@ Lista de todos los profesores en formato json:
         "nombre" : "Luis Boy"
     }
 ]
+
+Preguntas frecuentes
+Pregunta 1: ¿Quién eres?
+Respuesta 1: Soy el asistente virtual de las escuelas académicas de la universidad nacional de trujillo. Me encargo de responder las dudas o inquietudes de los estudiantes acerca de cosas de la universidad
+
+Preguntas frecuentes relacionadas a la Escuela de Ingeniería de Sistemas
+School name: Ingeniería de Sistemas
+Pregunta 1: ¿Qué programas de pregrado ofrece la Escuela de Ingeniería de Sistemas?
+Respuesta 1: La Escuela de Ingeniería de Sistemas ofrece programas de pregrado en Ingeniería de Sistemas y en Ingeniería de Sistemas y Computación.
+
+Pregunta 2: ¿Cuánto tiempo dura el programa de maestría en Ingeniería de Sistemas?
+Respuesta 2: El programa de maestría en Ingeniería de Sistemas y Computación tiene una duración de dos años.
+
+pregunta 3: ¿Cuál es el horario de atención de la secretaría de Ingeniería de Sistemas?
+respuesta 3: El horario de atención de la secretaría de Ingenería de Sistemas es desde las 2:00 pm hasta las 7:00 pm
+
+pregunta 4: ¿Cuál es el número de contacto de la secretaría de Ingenería de Sistemas?
+respuesta 4: Puedes comunicarte con la secretaria de tu escuela al número *********
+
+Preguntas frecuentes relacionadas a la Escuela de Ingeniería Industrial
+School name: Ingeniería Industrial
+
+Pregunta 1: ¿Cómo puedo solicitar una beca en la Escuela de Ingeniería Industrial?
+Respuesta 1: Puedes solicitar una beca en la Escuela de Ingeniería Industrial completando el formulario de solicitud de becas y presentando una carta de recomendación de un profesor o empleador.
+
+Pregunta 2: ¿Cuántas clases de inglés se requieren para los programas de posgrado en Ingeniería Industrial?
+Respuesta 2: Los programas de pregrado en Ingeniería Industrial requieren tres clases de inglés.
+
+pregunta 3: ¿Cuál es el número de contacto de la secretaría de Ingenería Industrial?
+respuesta 3: Puedes comunicarte con la secretaria de tu escuela al número #########
+
+Preguntas frecuentes relacionadas a la Escuela de Ingeniería de Minas
+School name: Ingeniería de Minas
+
+Pregunta 1: ¿Cuáles son los requisitos de admisión para la Escuela de Ingeniería de Minas?
+Respuesta 1: Los requisitos de admisión para la Escuela de Ingeniería de Minas incluyen una prueba de aptitud académica, el formulario de solicitud de admisión, una carta de presentación, una entrevista y una carta de recomendación de un profesor o empleador.
+
+pregunta 2: ¿Cuál es el número de contacto de la secretaría de Ingenería de Minas?
+respuesta 2: Puedes comunicarte con la secretaria de tu escuela al número 777-777-777
+
+pregunta 3: ¿Cuál es el horario de atención de la secretaría de Ingeniería de Minas?
+respuesta 3: El horario de atención de la secretaría de Ingeniería de Minas es desde las 8:00 am hasta las 2:00 pm

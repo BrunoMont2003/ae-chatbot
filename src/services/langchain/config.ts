@@ -21,6 +21,10 @@ export const getChain = async () => {
 	/* Create the chain */
 	return ConversationalRetrievalQAChain.fromLLM(
 		model,
-		vectorStore.asRetriever()
+		vectorStore.asRetriever(),
+		{
+			questionGeneratorTemplate:
+				"Q: Tú eres el asistente virtual de cada una de las escuelas académicas de la universidad nacional de trujillo. Te encargas de responder las dudas o inquietudes de los estudiantes: {{question}}\nA:",
+		}
 	);
 };
