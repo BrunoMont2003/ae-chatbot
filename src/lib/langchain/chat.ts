@@ -1,5 +1,5 @@
 import { getChain } from "./config";
-import { ChatService } from "../../services";
+import { ChatService } from "../../services/app";
 
 type ChatParams = {
 	question: string;

@@ -1,6 +1,6 @@
-import { AddMessageDTO } from "../dto/chat/add-message.dto";
-import { createChatDTO } from "../dto/chat/create-chat.dto";
-import { ChatModel } from "../models";
+import { AddMessageDTO } from "../../dto/chat/add-message.dto";
+import { createChatDTO } from "../../dto/chat/create-chat.dto";
+import { ChatModel } from "../../models";
 
 const createChat = async (chat: createChatDTO) => {
 	const newChat = new ChatModel(chat);

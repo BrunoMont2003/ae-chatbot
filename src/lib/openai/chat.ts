@@ -1,5 +1,5 @@
 import { ChatCompletionResponseMessageRoleEnum } from "openai";
-import { ChatService } from "../../services";
+import { ChatService } from "../../services/app";
 import handleEscapeChars from "../../utils/handleEscapeChars";
 import { openai } from "./config";
 import fs from "fs";
