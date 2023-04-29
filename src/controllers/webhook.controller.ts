@@ -2,12 +2,7 @@ import { Request, Response } from "express";
 import config from "../config/general.configs";
 import axios from "axios";
 
-const token = config.external.whatsapp.accessToken;
-
 const post = async (req: Request, res: Response) => {
-    // check the incoming webhook message 
-    console.log(req.body);
-
     if (!req.body.object) return res.status(400).json({ message: "Invalid request" });
     if (
         req.body.entry &&
@@ -16,21 +11,19 @@ const post = async (req: Request, res: Response) => {
         req.body.entry[0].changes[0].value.messages &&
         req.body.entry[0].changes[0].value.messages[0]
     ) {
+        console.log("Received message from WhatsApp");
         const phone_number_id =
             req.body.entry[0].changes[0].value.metadata.phone_number_id;
         const from = req.body.entry[0].changes[0].value.messages[0].from; // extract the phone number from the webhook payload
         const msg_body = req.body.entry[0].changes[0].value.messages[0].text.body; // extract the message text from the webhook payload
+
+        console.log("phone_number_id", phone_number_id);
         axios({
             method: "POST", // Required, HTTP method, a string, e.g. POST, GET
-            url:
-                "https://graph.facebook.com/v12.0/" +
-                phone_number_id +
-                "/messages?access_token=" +
-                token,
+            url: config.api.url + "/api/chat",
             data: {
-                messaging_product: "whatsapp",
-                to: from,
-                text: { body: "Ack: " + msg_body },
+                phone: from,
+                question: msg_body,
             },
             headers: { "Content-Type": "application/json" },
         });
