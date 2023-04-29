@@ -4,6 +4,8 @@ import { isAxiosError } from "axios";
 import { chat } from "../lib/openai/chat"; // openai
 import { ChatService } from "../services";
 import { validate } from "../validators/send-question.schema";
+import {sendResponse, getTextMessageInput} from "../utils/sendResponse";
+
 const sendMessage = async (req: Request, res: Response) => {
 	try {
 		const { question, phone } = req.body;
@@ -29,6 +31,11 @@ const sendMessage = async (req: Request, res: Response) => {
 			answer,
 			createdAt: new Date(),
 		});
+		
+		// Send message to whatsapp number
+		var data = getTextMessageInput(phone, answer);
+		sendResponse(data);
+
 		return res.status(200).json({ answer });
 	} catch (error: unknown) {
 		console.log(error);
