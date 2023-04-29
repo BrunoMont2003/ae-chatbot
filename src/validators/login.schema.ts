@@ -1,5 +1,5 @@
 import Ajv, { JSONSchemaType } from "ajv";
-import { LoginDTO } from "../dto/Credentials";
+import { LoginDTO } from "../dto/auth/login.dto";
 import addFormats from "ajv-formats";
 const ajv = new Ajv();
 addFormats(ajv);
