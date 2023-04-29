@@ -1,8 +1,7 @@
 import { Request, Response } from "express";
 import { handleAxiosError } from "../utils/handleError";
 import { isAxiosError } from "axios";
-import { chat } from "../lib/langchain/chat";
-// import { chat as c } from "../lib/openai/chat"; // openai
+import { chat } from "../lib/openai/chat"; // openai
 import { ChatService } from "../services";
 import { validate } from "../validators/send-question.schema";
 const sendMessage = async (req: Request, res: Response) => {
@@ -10,8 +9,7 @@ const sendMessage = async (req: Request, res: Response) => {
 		const { question, phone } = req.body;
 		if (!validate({ question, phone }))
 			return res.status(400).json(validate.errors);
-		const { text: answer } = await chat({ question });
-		// const answer = await c(question); // openai
+		const answer = await chat({ phone, question }); // openai
 		// save to db
 		// if the phone number is not in the db, create a new chat
 		const chatFound = await ChatService.findChatByPhone(phone);

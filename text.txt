@@ -1,10 +1,4 @@
-La escuela académica de ingeniería de sistemas tiene 10 ciclos académicos. 
-
-El presente ciclo forma parte del periodo 2023-I, y empieza el 10 de Abril de 2023.
-
-El director de escuela es el Dr. Everson Agreda, pero algunos docentes que tambien pasarón por dicho puesto son Dr. Luis Boy y Ing. Luis Tenorio.
-
-Lista de todos los profesores en formato json:
+La escuela académica de ingeniería de sistemas tiene 10 ciclos académicos. El presente ciclo forma parte del periodo 2023-I, y empieza el 10 de Abril de 2023. El director de escuela de ing de sistemas es el Dr. Everson Agreda, pero algunos docentes que tambien pasarón por dicho puesto son Dr. Luis Boy y Ing. Luis Tenorio. Lista de todos los profesores en formato json:
 [
     {
         "nombre" : "Juan Santos"
