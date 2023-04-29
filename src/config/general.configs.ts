@@ -16,7 +16,7 @@ type TConfig = {
 			version: string;
 			phoneNumberId: string;
 			accessToken: string;
-
+			verifyToken?: string;
 		}
 	};
 };
@@ -40,6 +40,7 @@ const config: TConfig = {
 			version: process.env.WAB_VERSION || "",
 			phoneNumberId: process.env.WAB_PHONE_NUMBER_ID || "",
 			accessToken: process.env.WAB_ACCESS_TOKEN || "",
+			verifyToken: process.env.WAB_VERIFY_TOKEN || "",
 		}
 	},
 };
