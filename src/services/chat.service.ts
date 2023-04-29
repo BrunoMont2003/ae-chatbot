@@ -21,8 +21,15 @@ const addMessageToChat = async (phone: string, message: AddMessageDTO) => {
 	return chat;
 };
 
+const getHistory = async (phone: string) => {
+	const chat = await ChatModel.findOne({ phone });
+	if (!chat) return null;
+	return chat.messages;
+};
+
 export default {
 	createChat,
 	findChatByPhone,
 	addMessageToChat,
+	getHistory,
 };
