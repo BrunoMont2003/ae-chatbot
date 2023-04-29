@@ -7,5 +7,5 @@ connect();
 
 //listen port
 app.listen(config.api.port, () => {
-	console.log(`Listening on port http://localhost:${config.api.port}`);
+	console.log(`Listening on ${config.api.url}`);
 });

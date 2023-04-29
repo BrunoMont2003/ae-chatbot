@@ -1,6 +1,7 @@
 type TConfig = {
 	api: {
 		port: number | string;
+		url: string;
 	};
 	mongo: {
 		uri: string;
@@ -24,6 +25,7 @@ const config: TConfig = {
 	// General
 	api: {
 		port: process.env.PORT || 3000,
+		url: process.env.API_URL || "http://localhost:3000",
 	},
 	// Database
 	mongo: {
