@@ -11,6 +11,7 @@ const sendMessage = async (req: Request, res: Response) => {
 		// const resp = await c(message);
 		// res.status(200).json({ response: resp });
 	} catch (error: unknown) {
+		console.log(error);
 		if (isAxiosError(error)) return handleAxiosError(error, res);
 		return res.status(500).json({ error: "Something went wrong" });
 	}
