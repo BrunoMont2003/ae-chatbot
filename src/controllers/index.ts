@@ -1,3 +1,4 @@
 import ChatController from "./chat.controller";
+import WebhookController from "./webhook.controller";
 
-export { ChatController };
+export { ChatController, WebhookController };
