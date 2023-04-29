@@ -2,9 +2,9 @@ import { Request, Response } from "express";
 import { handleAxiosError } from "../utils/handleError";
 import { isAxiosError } from "axios";
 import { chat } from "../lib/openai/chat"; // openai
-import { ChatService } from "../services";
+import { ChatService } from "../services/app";
 import { validate } from "../validators/send-question.schema";
-import {sendResponse, getTextMessageInput} from "../utils/sendResponse";
+import { sendMessageToWhatsapp } from "../services/external/whatsapp.service";
 
 const sendMessage = async (req: Request, res: Response) => {
 	try {
@@ -31,11 +31,9 @@ const sendMessage = async (req: Request, res: Response) => {
 			answer,
 			createdAt: new Date(),
 		});
-		
 		// Send message to whatsapp number
-		var data = getTextMessageInput(phone, answer);
-		sendResponse(data);
-
+		const wsp_res = await sendMessageToWhatsapp({ phone, text: answer })
+		if (wsp_res.status !== 200) throw wsp_res;
 		return res.status(200).json({ answer });
 	} catch (error: unknown) {
 		console.log(error);
