@@ -28,7 +28,6 @@ export const chat = async ({ question, phone }: ChatParams) => {
 			role: "assistant",
 		});
 	});
-	console.log(chat_history);
 	const informationData = getTextFromFile("text.txt");
 	const { data } = await openai.createChatCompletion({
 		model: "gpt-3.5-turbo",

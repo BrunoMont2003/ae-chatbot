@@ -16,6 +16,5 @@ export const sendMessageToWhatsapp = async (
             'Content-Type': 'application/json'
         }
     });
-    console.log(res.data);
     return res;
 }
