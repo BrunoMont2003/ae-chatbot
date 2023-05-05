@@ -3,6 +3,7 @@ import { ChatService } from "../../services/app";
 import handleEscapeChars from "../../utils/handleEscapeChars";
 import { openai } from "./config";
 import fs from "fs";
+import { INSTRUCTIONS } from "../../constants/prompts";
 const getTextFromFile = (path: string) => {
 	return fs.readFileSync(path, "utf8");
 };
@@ -37,8 +38,7 @@ export const chat = async ({ question, phone }: ChatParams) => {
 				role: "system",
 			},
 			{
-				content:
-					"Tú eres el asistente virtual de cada una de las escuelas académicas de la universidad nacional de trujillo. Te encargas de responder las dudas o inquietudes de los estudiantes acerca de cosas de la universidad. Limita tus respuestas con solo la información que se te ha sido proporcionada.",
+				content:INSTRUCTIONS,
 				role: "system",
 			},
 			// insert chat history here
