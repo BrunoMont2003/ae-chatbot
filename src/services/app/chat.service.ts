@@ -24,7 +24,8 @@ const addMessageToChat = async (phone: string, message: AddMessageDTO) => {
 const getHistory = async (phone: string) => {
 	const chat = await ChatModel.findOne({ phone });
 	if (!chat) return null;
-	return chat.messages;
+	const history = chat.messages.sort((a, b) => a.createdAt!.getTime() - b.createdAt!.getTime()).slice(0, 5);
+	return history;
 };
 
 export default {
