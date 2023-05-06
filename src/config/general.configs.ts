@@ -20,6 +20,7 @@ type TConfig = {
 			verifyToken?: string;
 		}
 	};
+	seed: number;
 };
 const config: TConfig = {
 	// General
@@ -45,6 +46,7 @@ const config: TConfig = {
 			verifyToken: process.env.WAB_VERIFY_TOKEN || "",
 		}
 	},
+	seed: process.env.SEED ? parseInt(process.env.SEED) : 0,
 };
 
 export default config;
