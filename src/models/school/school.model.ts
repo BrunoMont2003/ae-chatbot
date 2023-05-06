@@ -9,7 +9,7 @@ export class School {
 	information?: string;
 
 	@prop({ required: true, type: () => [Period] })
-	period: Period[];
+	periods: Period[];
 }
 
 const SchoolModel = getModelForClass(School);

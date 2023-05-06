@@ -10,9 +10,13 @@ export class Subject {
 	@prop()
 	professor?: {
 		name: string;
-		profession: string;
+		profession?: string;
 	};
 
 	@prop()
 	summary?: string;
+
+	@prop()
+	type?: 'obligatorio' | 'optativo' | 'especialidad';
+
 }

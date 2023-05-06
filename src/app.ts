@@ -5,6 +5,7 @@ import compression from "compression";
 import { loadRoutes } from "./routes";
 import morgan from "morgan";
 import * as AppMiddlewares from "./middlewares/app";
+// import seed from "./seed";
 
 const app: Express = express();
 
@@ -24,5 +25,9 @@ if (process.env.NODE_ENV !== "prod") {
 
 //load routes
 loadRoutes(app);
+
+// seed data
+// seed();
+
 
 export { app };
