@@ -1,3 +1,3 @@
 import ChatService from "./chat.service";
-
-export { ChatService };
+import SchoolService from "./school.service";
+export { ChatService, SchoolService };
