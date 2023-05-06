@@ -26,11 +26,12 @@ const sendMessage = async (req: Request, res: Response) => {
 					},
 				],
 			});
-		await ChatService.addMessageToChat(phone, {
-			question,
-			answer,
-			createdAt: new Date(),
-		});
+		else
+			await ChatService.addMessageToChat(phone, {
+				question,
+				answer,
+				createdAt: new Date(),
+			});
 		// Send message to whatsapp number
 		const wsp_res = await sendMessageToWhatsapp({ phone, text: answer })
 		if (wsp_res.status !== 200) throw wsp_res;
