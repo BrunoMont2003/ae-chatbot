@@ -1,6 +1,12 @@
 import { SchoolModel } from "../../models";
 
-export const getSchool = async (schoolId: string) => {
-    const school = await SchoolModel.findById(schoolId).select("-__v -_id -periods._id -periods.cycles._id -periods.cycles.subjects._id -periods.cycles.subjects.professor._id");
+const getSchoolBySlug = async ({ slug }: { slug: string }) => {
+    const school = await SchoolModel.findOne({
+        slug
+    }).select("-__v -_id -periods._id -periods.cycles._id -periods.cycles.subjects._id -periods.cycles.subjects.professor._id -slug");
     return school;
+}
+
+export default {
+    getSchoolBySlug
 }
