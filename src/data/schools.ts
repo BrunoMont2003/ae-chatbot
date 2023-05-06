@@ -169,22 +169,9 @@ const schools: School[] = [
                     },
                 ]
             }
-        ], information: `La escuela académica de ingeniería de sistemas tiene 10 ciclos académicos. El presente ciclo forma parte del periodo 2023-I, y empieza el 10 de Abril de 2023. El director de escuela de ing de sistemas es el Dr. Everson Agreda, pero algunos docentes que tambien pasarón por dicho puesto son Dr. Luis Boy y Ing. Luis Tenorio.
-        Preguntas frecuentes relacionadas a la Escuela de Ingeniería de Sistemas
-School name: Ingeniería de Sistemas
-Pregunta 1: ¿Qué programas de pregrado ofrece la Escuela de Ingeniería de Sistemas?
-Respuesta 1: La Escuela de Ingeniería de Sistemas ofrece programas de pregrado en Ingeniería de Sistemas y en Ingeniería de Sistemas y Computación.
-
-Pregunta 2: ¿Cuánto tiempo dura el programa de maestría en Ingeniería de Sistemas?
-Respuesta 2: El programa de maestría en Ingeniería de Sistemas y Computación tiene una duración de dos años.
-
-pregunta 3: ¿Cuál es el horario de atención de la secretaría de Ingeniería de Sistemas?
-respuesta 3: El horario de atención de la secretaría de Ingenería de Sistemas es desde las 2:00 pm hasta las 7:00 pm
-
-pregunta 4: ¿Cuál es el número de contacto de la secretaría de Ingenería de Sistemas?
-respuesta 4: Puedes comunicarte con la secretaria de tu escuela al número *********
-        `,
+        ], information: `La escuela académica de ingeniería de sistemas tiene 10 ciclos académicos. El director de escuela de ing de sistemas es el Dr. Everson Agreda, pero algunos docentes que tambien pasarón por dicho puesto son Dr. Luis Boy y Ing. Luis Tenorio. Se ofrece programas de pregrado en Ingeniería de Sistemas y en Ingeniería de Sistemas y Computación. El programa de maestría en Ingeniería de Sistemas y Computación tiene una duración de dos años. El horario de atención de la secretaría de Ingenería de Sistemas es desde las 2:00 pm hasta las 7:00 pm. Puedes comunicarte con la secretaria de tu escuela al número 987654321`,
         name: "Ingeniería de Sistemas",
+        slug: "ing-sistemas",
 
     }
 ]
