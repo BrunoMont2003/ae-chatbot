@@ -6,6 +6,9 @@ export class School {
 	name?: string;
 
 	@prop()
+	slug?: string;
+
+	@prop()
 	information?: string;
 
 	@prop({ required: true, type: () => [Period] })
