@@ -1,5 +1,6 @@
 import { prop, getModelForClass } from "@typegoose/typegoose";
 import { Period } from "./period.model";
+import { Faq } from "./faq.model";
 
 export class School {
 	@prop()
@@ -13,6 +14,9 @@ export class School {
 
 	@prop({ required: true, type: () => [Period] })
 	periods: Period[];
+
+	@prop({ type: () => [Faq] })
+	faqs?: Faq[];
 }
 
 const SchoolModel = getModelForClass(School);
