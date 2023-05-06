@@ -1,12 +1,8 @@
 import { ChatCompletionResponseMessageRoleEnum } from "openai";
-import { ChatService } from "../../services/app";
+import { ChatService, SchoolService } from "../../services/app";
 import handleEscapeChars from "../../utils/handleEscapeChars";
 import { openai } from "./config";
-import fs from "fs";
 import { INSTRUCTIONS } from "../../constants/prompts";
-const getTextFromFile = (path: string) => {
-	return fs.readFileSync(path, "utf8");
-};
 type ChatParams = {
 	question: string;
 	phone: string;
@@ -29,16 +25,17 @@ export const chat = async ({ question, phone }: ChatParams) => {
 			role: "assistant",
 		});
 	});
-	const informationData = getTextFromFile("text.txt");
+	console.log(chat_history);
+	const jsonData = JSON.stringify((await SchoolService.getSchoolBySlug({ slug: "ing-sistemas" }))?.toJSON());
 	const { data } = await openai.createChatCompletion({
 		model: "gpt-3.5-turbo",
 		messages: [
 			{
-				content: informationData,
+				content: INSTRUCTIONS,
 				role: "system",
 			},
 			{
-				content:INSTRUCTIONS,
+				content: jsonData,
 				role: "system",
 			},
 			// insert chat history here
