@@ -167,6 +167,214 @@ const schools: School[] = [
                         ],
 
                     },
+                    {
+                        number: 5,
+                        subjects: [
+                            {
+                                name: "Arquitectura Y Organización De Computadoras",
+                                credits: 3,
+                                type: "especialidad",
+                                professor: {
+                                    name: "César Arellano Salazar"
+                                }
+                            },
+                            {
+                                name: "Contabilidad Gerencial",
+                                credits: 3,
+                                type: "especialidad",
+                                professor: {
+                                    name: "Yoni Valiente Saldaña"
+                                }
+                            },
+                            {
+                                name: "Ingenieria De Datos",
+                                credits: 4,
+                                type: "especialidad",
+                                professor: {
+                                    name: "Luis Boy Chavil"
+                                }
+                            },
+                            {
+                                name: "Investigación De Operaciones",
+                                credits: 3,
+                                type: "especialidad",
+                                professor: {
+                                    name: ""
+                                }
+                            },
+                            {
+                                name: "Sistemas De Información",
+                                credits: 4,
+                                type: "especialidad",
+                                professor: {
+                                    name: "Robert Sanchez Ticona"
+                                }
+                            },
+                            {
+                                name: "Tecnologias Web",
+                                credits: 3,
+                                type: "especialidad",
+                                professor: {
+                                    name: "Juan Obando Roldán"
+                                }
+                            },
+                            {
+                                name: "Teleinformática",
+                                credits: 3,
+                                type: "optativo",
+                                professor: {
+                                    name: "Camilo Suarez Rebaza"
+                                }
+                            },
+                            {
+                                name: "Transformación Digital",
+                                credits: 3,
+                                type: "optativo",
+                                professor: {
+                                    name: "David Agreda Gamboa"
+                                }
+                            }
+                        ]
+
+                    },
+                    {
+                        number: 7,
+                        subjects: [
+                            {
+                                name: "Cadena de Suministros",
+                                credits: 3,
+                                type: "especialidad",
+                                professor: {
+                                    name: "Joe González Vasquez"
+                                }
+                            },
+                            {
+                                name: "Gestión de Servicios TI",
+                                credits: 3,
+                                type: "especialidad",
+                                professor: {
+                                    name: "Alberto Mendoza De los Santos"
+                                }
+                            },
+                            {
+                                name: "Ingeniería de Software I",
+                                credits: 4,
+                                type: "especialidad",
+                                professor: {
+                                    name: "Juan Santos Fernandez"
+                                }
+                            },
+                            {
+                                name: "Metodología de la Invest. Científica",
+                                credits: 3,
+                                type: "especialidad",
+                                professor: {
+                                    name: "Luis Tenorio Cabrera"
+                                }
+                            },
+                            {
+                                name: "Negocios Electrónicos",
+                                credits: 3,
+                                type: "optativo",
+                                professor: {
+                                    name: "David Agreda Gamboa"
+                                }
+                            },
+                            {
+                                name: "Planeamiento Estratégico",
+                                credits: 3,
+                                type: "especialidad",
+                                professor: {
+                                    name: "Oscar Alcántara Moreno"
+                                }
+                            },
+                            {
+                                name: "Redes y Comunicaciones I",
+                                credits: 3,
+                                type: "especialidad",
+                                professor: {
+                                    name: "César Arellano Salazar"
+                                }
+                            },
+                            {
+                                name: "Administración de Base de Datos",
+                                credits: 3,
+                                type: "optativo",
+                                professor: {
+                                    name: "Ricardo Mendoza Rivera"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        number: 9,
+                        subjects: [
+                            {
+                                name: "Gestión de Proyectos de TI",
+                                credits: 3,
+                                type: "especialidad",
+                                professor: {
+                                    name: "José Gómez Ávila"
+                                }
+                            },
+                            {
+                                name: "Computación en la Nube",
+                                credits: 3,
+                                type: "especialidad",
+                                professor: {
+                                    name: "José Gómez Ávila"
+                                }
+                            },
+                            {
+                                name: "Tesis I",
+                                credits: 4,
+                                type: "especialidad",
+                                professor: {
+                                    name: "Juan Santos Fernandez"
+                                }
+                            },
+                            {
+                                name: "Hackeo Ético",
+                                credits: 3,
+                                type: "optativo",
+                                professor: {
+                                    name: "Camilo Suarez Rebaza"
+                                }
+                            },
+                            {
+                                name: "Ingeniería Web",
+                                credits: 3,
+                                type: "especialidad",
+                                professor: {
+                                    name: "Marcelino Torres Villanueva"
+                                }
+                            },
+                            {
+                                name: "Analítica de Negocios",
+                                credits: 3,
+                                type: "especialidad",
+                                professor: {
+                                    name: "Ricardo Mendoza Rivera"
+                                }
+                            },
+                            {
+                                name: "Auditoria Informática",
+                                credits: 3,
+                                type: "optativo",
+                                professor: {
+                                    name: "Alberto Mendoza De los Santos"
+                                }
+                            },
+                            {
+                                name: "Empredimiento Tecnológico",
+                                credits: 3,
+                                type: "optativo",
+                                professor: {
+                                    name: "Oscar Alcántara Moreno"
+                                }
+                            },
+                        ]
+                    }
                 ]
             }
         ], information: `La escuela académica de ingeniería de sistemas tiene 10 ciclos académicos. El director de escuela de ing de sistemas es el Dr. Everson Agreda, pero algunos docentes que tambien pasarón por dicho puesto son Dr. Luis Boy y Ing. Luis Tenorio. Se ofrece programas de pregrado en Ingeniería de Sistemas y en Ingeniería de Sistemas y Computación. El programa de maestría en Ingeniería de Sistemas y Computación tiene una duración de dos años. El horario de atención de la secretaría de Ingenería de Sistemas es desde las 2:00 pm hasta las 7:00 pm. Puedes comunicarte con la secretaria de tu escuela al número 987654321`,
