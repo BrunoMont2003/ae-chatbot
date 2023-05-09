@@ -3,13 +3,23 @@ import { ChatService, SchoolService } from "../../services/app";
 import handleEscapeChars from "../../utils/handleEscapeChars";
 import { openai } from "./config";
 import { INSTRUCTIONS } from "../../constants/prompts";
+import { Message } from "../../models/chat/message.model";
 type ChatParams = {
 	question: string;
 	phone: string;
 };
 export const chat = async ({ question, phone }: ChatParams) => {
-	// FInd the chat history
-	const history = await ChatService.getHistory(phone);
+	let history: Message[] | null = [];
+	// find the last message
+	const lastMessage = await ChatService.getLastMessage(phone);
+	// if the last message was delivered at least 5 hours ago, set the history to a empty array
+	if (lastMessage?.createdAt && lastMessage.createdAt.getTime() + 1000 * 60 * 60 * 5 < Date.now()) {
+		history = [];
+	}
+	else {
+		// FInd the chat history
+		history = await ChatService.getHistory(phone);
+	}
 	const chat_history: {
 		content: string;
 		role: ChatCompletionResponseMessageRoleEnum;
@@ -26,7 +36,7 @@ export const chat = async ({ question, phone }: ChatParams) => {
 		});
 	});
 	const jsonData = JSON.stringify((await SchoolService.getSchoolBySlug({ slug: "ing-sistemas" }))?.toJSON());
-	const { data,  } = await openai.createChatCompletion({
+	const { data } = await openai.createChatCompletion({
 		model: "gpt-3.5-turbo",
 		messages: [
 			{
