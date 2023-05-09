@@ -25,7 +25,6 @@ export const chat = async ({ question, phone }: ChatParams) => {
 			role: "assistant",
 		});
 	});
-	console.log(chat_history);
 	const jsonData = JSON.stringify((await SchoolService.getSchoolBySlug({ slug: "ing-sistemas" }))?.toJSON());
 	const { data } = await openai.createChatCompletion({
 		model: "gpt-3.5-turbo",
