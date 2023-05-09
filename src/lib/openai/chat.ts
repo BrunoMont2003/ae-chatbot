@@ -26,7 +26,7 @@ export const chat = async ({ question, phone }: ChatParams) => {
 		});
 	});
 	const jsonData = JSON.stringify((await SchoolService.getSchoolBySlug({ slug: "ing-sistemas" }))?.toJSON());
-	const { data } = await openai.createChatCompletion({
+	const { data,  } = await openai.createChatCompletion({
 		model: "gpt-3.5-turbo",
 		messages: [
 			{
@@ -45,5 +45,6 @@ export const chat = async ({ question, phone }: ChatParams) => {
 			},
 		],
 	});
+	console.log("Total of tokens used: ", data.usage?.total_tokens ?? 0);
 	return handleEscapeChars(data.choices[0].message?.content || "");
 };
