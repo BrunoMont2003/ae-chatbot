@@ -4,8 +4,7 @@ import axios from "axios";
 
 const post = async (req: Request, res: Response) => {
     try {
-        if (!req.body) return res.status(400).json({ message: "Invalid request" });
-        if (!req.body.object) return res.status(400).json({ message: "Invalid request" });
+        if (!req || !req.body || !req.body.object) return res.status(400).json({ message: "Invalid request" });
         if (
             req.body.entry &&
             req.body.entry[0].changes &&
