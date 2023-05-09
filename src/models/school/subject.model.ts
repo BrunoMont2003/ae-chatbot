@@ -1,5 +1,8 @@
-import { prop } from "@typegoose/typegoose";
+import { Severity, modelOptions, prop } from "@typegoose/typegoose";
 
+@modelOptions({ options: {
+	allowMixed: Severity.ALLOW
+} })
 export class Subject {
 	@prop()
 	name: string;
@@ -18,5 +21,7 @@ export class Subject {
 
 	@prop()
 	type?: 'obligatorio' | 'optativo' | 'especialidad';
+
+	
 
 }
