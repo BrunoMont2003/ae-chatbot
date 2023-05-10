@@ -1,13 +1,14 @@
 # ae-chatbot
 
-Chatbot API powered with OpenAI.
+Implementation of the Chatbot service to assist university students using Chat-GPT 3
 
 ## Tecnologies
 
 - Typescript
 - Express: framework
 - Yarn: package manager
-- Prisma: ORM
+- Typegoose: ODM
+- MongoDB: NoSQL DB
 - Prettier: formatter
 
 ## Scripts
