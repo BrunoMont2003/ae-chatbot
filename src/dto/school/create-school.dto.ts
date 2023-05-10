@@ -19,4 +19,9 @@ export interface CreateSchoolDTO {
 			}[];
 		}[];
 	}[];
+	faqs: {
+		question: string;
+		answer: string;
+	}[];
 }
+ 
