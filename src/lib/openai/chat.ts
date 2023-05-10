@@ -4,6 +4,8 @@ import handleEscapeChars from "../../utils/handleEscapeChars";
 import { openai } from "./config";
 import { INSTRUCTIONS } from "../../constants/prompts";
 import { Message } from "../../models/chat/message.model";
+import schoolJsonToText from "../../utils/schoolJsonToText";
+import { School } from "../../models/school/school.model";
 type ChatParams = {
 	question: string;
 	phone: string;
@@ -35,7 +37,8 @@ export const chat = async ({ question, phone }: ChatParams) => {
 			role: "assistant",
 		});
 	});
-	const jsonData = JSON.stringify((await SchoolService.getSchoolBySlug({ slug: "ing-sistemas" }))?.toJSON());
+	const schoolData = await SchoolService.getSchoolBySlug({ slug: "ing-sistemas" })
+	const schoolText = schoolJsonToText(schoolData?.toJSON() as School);
 	const { data } = await openai.createChatCompletion({
 		model: "gpt-3.5-turbo",
 		messages: [
@@ -44,7 +47,7 @@ export const chat = async ({ question, phone }: ChatParams) => {
 				role: "system",
 			},
 			{
-				content: jsonData,
+				content: schoolText,
 				role: "system",
 			},
 			// insert chat history here
@@ -54,7 +57,9 @@ export const chat = async ({ question, phone }: ChatParams) => {
 				role: "user",
 			},
 		],
-	});
+		temperature: 0.2,
+	},
+	);
 	console.log("Total of tokens used: ", data.usage?.total_tokens ?? 0);
 	return handleEscapeChars(data.choices[0].message?.content || "");
 };
