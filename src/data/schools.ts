@@ -377,17 +377,17 @@ const schools: School[] = [
                     }
                 ]
             }
-        ], information: `La escuela académica de ingeniería de sistemas tiene 10 ciclos académicos. El director de escuela de ing de sistemas es el Dr. Everson Agreda, pero algunos docentes que tambien pasarón por dicho puesto son Dr. Luis Boy y Ing. Luis Tenorio. Se ofrece programas de pregrado en Ingeniería de Sistemas y en Ingeniería de Sistemas y Computación. El programa de maestría en Ingeniería de Sistemas y Computación tiene una duración de dos años. El horario de atención de la secretaría de Ingenería de Sistemas es desde las 2:00 pm hasta las 7:00 pm. Puedes comunicarte con la secretaria de tu escuela al número 987654321`,
+        ], information: `La escuela académica de ingeniería de sistemas tiene 10 ciclos académicos. El director de escuela de ing de sistemas es el Dr. Everson Agreda, pero algunos docentes que tambien pasarón por dicho puesto son Dr. Luis Boy y Ing. Luis Tenorio. Se ofrece programas de pregrado en Ingeniería de Sistemas y en Ingeniería de Sistemas y Computación. El programa de maestría en Ingeniería de Sistemas y Computación tiene una duración de dos años.`,
         name: "Ingeniería de Sistemas",
         slug: "ing-sistemas",
         faqs: [
             {
                 question: "¿Cuál es el horario de atención y el numero de contacto de la secretaría de Ingenería de Sistemas?",
-                answer: "El horario de atención de la secretaría de Ingenería de Sistemas es desde las 2:00 pm hasta las 7:00 pm. Puedes comunicarte con la secretaria de tu escuela al número 987654321"
+                answer: "El horario de atención de la secretaría de Ingenería de Sistemas es desde las 8:00 am hasta las 2:00 pm. Puedes comunicarte con la secretaria de tu escuela al número 970 025 212"
             },
             {
                 question: "¿Cómo es el proceso de matrícula?",
-                answer: "El proceso de matrícula es el siguiente: 1: Ingresar al SUV.  2. Elegir cursos a matricular. 3. Generar orden de pago. 4. Pagar en un agente interbank. 5. Entregar orden de pago y voucher en la secretaría de tu escuela."
+                answer: "El proceso de matrícula es el siguiente: 1: Ingresar al Sistema Universitario Virtual (SUV).  2. Elegir cursos a matricular. 3. Generar orden de pago. 4. Pagar en un agente interbank. 5. Entregar orden de pago y voucher en la secretaría de tu escuela."
             },
             {
                 question: "¿Cúal es el codigo de servicio para pagar en un agente interbank?",
