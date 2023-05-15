@@ -8,7 +8,7 @@ const schema: JSONSchemaType<SendQuestionDTO> = {
 	type: "object",
 	properties: {
 		question: { type: "string", maxLength: 1000 },
-		phone: { type: "string", maxLength: 20 },
+		phone: { type: "string", maxLength: 11, minLength: 11 },
 	},
 	required: ["question", "phone"],
 };
