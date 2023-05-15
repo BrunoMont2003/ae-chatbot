@@ -1,4 +1,4 @@
-import { School } from "../models/school/school.model";
+import { School } from "../../models/school/school.model";
 
 const schools: School[] = [
     {
@@ -376,8 +376,253 @@ const schools: School[] = [
                         ]
                     }
                 ]
+            },
+            {
+                year: "2023",
+                semester: 2,
+                start: new Date("2023-08-28"),
+                end: new Date("2023-12-15"),
+                cycles: [
+                    {
+                        number: 2,
+                        subjects: [
+                            {
+                                name: "Análisis Matemático",
+                                credits: 4,
+                                type: "obligatorio",
+                            },
+                            {
+                                name: "Cultura Investigativa y Pensamiento Crítico",
+                                credits: 3,
+                                type: "obligatorio",
+                            },
+                            {
+                                name: "Ética, Convivencia Humana y Ciudadanía",
+                                credits: 3,
+                                type: "obligatorio",
+                            },
+                            {
+                                name: "Física General",
+                                credits: 4,
+                                type: "optativo",
+                            },
+                            {
+                                name: "Programación Orientada a Objetos I",
+                                credits: 4,
+                                type: "especialidad",
+                                professor: {
+                                    name: "Zoraida Vidal Melgarejo"
+                                }
+                            },
+                            {
+                                name: "Sociedad Cultura y Ecología",
+                                credits: 3,
+                                type: "obligatorio",
+                            },
+                            {
+                                name: "Taller de Deporte",
+                                credits: 1,
+                                type: "optativo",
+                            },
+                        ]
+                    },
+                    {
+                        number: 4,
+                        subjects: [
+                            {
+                                name: 'Computación Gráfica Y Visual',
+                                credits: 3,
+                                type: 'optativo'
+                            },
+                            {
+                                name: 'Plataformas Tecnológicas',
+                                credits: 3,
+                                type: 'optativo'
+                            },
+                            {
+                                name: 'Diseño Web',
+                                credits: 3,
+                                type: 'especialidad',
+                                professor: {
+                                    name: 'Juan Obando Roldán'
+                                }
+                            },
+                            {
+                                name: 'Economia General',
+                                credits: 3,
+                                type: 'especialidad'
+                            },
+                            {
+                                name: 'Estructura De Datos Orientado A Objetos',
+                                credits: 4,
+                                type: 'especialidad'
+                            },
+                            {
+                                name: 'Gestión De Procesos',
+                                credits: 3,
+                                type: 'especialidad',
+                                professor: {
+                                    name: "David Agreda Gamboa"
+                                }
+                            },
+                            {
+                                name: 'Pensamiento De Diseño',
+                                credits: 3,
+                                type: 'especialidad'
+                            },
+                            {
+                                name: 'Sistemas Digitales',
+                                credits: 3,
+                                type: 'especialidad',
+                                professor: {
+                                    name: 'César Arellano Salazar'
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        number: 6,
+                        subjects: [
+                            {
+                                name: "Finanzas Corporativas",
+                                credits: 3,
+                                type: "especialidad",
+                            },
+                            {
+                                name: "Gestión del Talento Humano",
+                                credits: 3,
+                                type: "optativo",
+                            },
+                            {
+                                name: "Ingeniería de Datos II",
+                                credits: 4,
+                                type: "especialidad",
+                            },
+                            {
+                                name: "Ingeniería de Requerimientos",
+                                credits: 3,
+                                type: "especialidad",
+                            },
+                            {
+                                name: "Ingeniería Económica",
+                                credits: 3,
+                                type: "especialidad",
+                            },
+                            {
+                                name: "Sistemas Inteligentes",
+                                credits: 3,
+                                type: "especialidad",
+                            },
+                            {
+                                name: "Sistemas Operativos",
+                                credits: 3,
+                                type: "especialidad",
+                            }
+                        ]
+                    },
+                    {
+                        number: 8,
+                        subjects: [
+                            {
+                                name: "Marketing y Medios Sociales",
+                                credits: 3,
+                                type: "especialidad",
+                                professor: {
+                                    name: "Oscar Alcántara Moreno"
+                                }
+                            },
+                            {
+                                name: "Seguridad de la Información",
+                                credits: 3,
+                                type: "especialidad",
+                                professor: {
+                                    name: "Alberto Mendoza De los Santos"
+                                }
+                            },
+                            {
+                                name: "Internet de las Cosas",
+                                credits: 3,
+                                type: "especialidad",
+
+                            },
+                            {
+                                name: "Inteligencia de Negocios",
+                                credits: 3,
+                                type: "especialidad",
+                            },
+                            {
+                                name: "Ingeniería de Software II",
+                                credits: 4,
+                                type: "especialidad",
+                                professor: {
+                                    name: "Juan Santos Fernandez"
+                                }
+                            },
+                            {
+                                name: "Redes y Comunicaciones II",
+                                credits: 3,
+                                type: "especialidad",
+                                professor: {
+                                    name: "David Agreda Gamboa"
+                                }
+                            },
+                            {
+                                name: "Deontología y Derecho Informático",
+                                credits: 3,
+                                type: "optativo",
+                            },
+                            {
+                                name: "Arquitectura basada en Microservicios",
+                                credits: 3,
+                                type: "optativo",
+                            }
+                        ]
+                    },
+                    {
+                        number: 10,
+                        subjects: [
+                            {
+                                name: "Sistemas de Información Empresarial",
+                                credits: 3,
+                                type: "especialidad",
+                            },
+                            {
+                                name: "Gobierno de TI",
+                                credits: 3,
+                                type: "especialidad",
+                                professor: {
+                                    name: "Alberto Mendoza De los Santos"
+                                },
+                            },
+                            {
+                                name: "Tesis II",
+                                credits: 4,
+                                type: "especialidad",
+                                professor: {
+                                    name: "Juan Santos Fernandez"
+                                }
+                            },
+                            {
+                                name: "Arquitectura Empresarial",
+                                credits: 3,
+                                type: "especialidad",
+                            },
+                            {
+                                name: "Responsabilidad Social Corporativa",
+                                credits: 3,
+                                type: "especialidad",
+                            },
+                            {
+                                name: "Aplicaciones Móviles",
+                                credits: 3,
+                                type: "especialidad",
+                            }
+                        ]
+                    }
+                ]
             }
-        ], information: `La escuela académica de ingeniería de sistemas tiene 10 ciclos académicos. El director de escuela de ing de sistemas es el Dr. Everson Agreda, pero algunos docentes que tambien pasarón por dicho puesto son Dr. Luis Boy y Ing. Luis Tenorio. Se ofrece programas de pregrado en Ingeniería de Sistemas y en Ingeniería de Sistemas y Computación. El programa de maestría en Ingeniería de Sistemas y Computación tiene una duración de dos años.`,
+        ],
+        information: `La escuela académica de ingeniería de sistemas tiene 10 ciclos académicos. El director de escuela de ing de sistemas es el Dr. Everson Agreda, pero algunos docentes que tambien pasarón por dicho puesto son Dr. Luis Boy y Ing. Luis Tenorio. Se ofrece programas de pregrado en Ingeniería de Sistemas y en Ingeniería de Sistemas y Computación. El programa de maestría en Ingeniería de Sistemas y Computación tiene una duración de dos años.`,
         name: "Ingeniería de Sistemas",
         slug: "ing-sistemas",
         faqs: [
@@ -400,6 +645,10 @@ const schools: School[] = [
             {
                 question: "¿Cuáles son los requisitos para solicitar obtener bachiller y título?",
                 answer: ""
+            },
+            {
+                question: "¿Cuándo puedo obtener mi carnet universitario?",
+                answer: "Si ya has solicitado tu carnet universitario, puedes recogerlo el 22 de Mayo del 2023. Si aun no lo solicitas puedes hacerlo entrando al sistema de gestión de trámites de la UNT. Si no tiene cuenta, se puede crear una en la página."
             }
         ]
 

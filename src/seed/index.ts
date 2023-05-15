@@ -1,4 +1,4 @@
-import schools from "../data/schools";
+import schools from "./data/schools";
 import { SchoolModel } from "../models";
 
 
