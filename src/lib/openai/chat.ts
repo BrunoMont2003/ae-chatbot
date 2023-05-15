@@ -4,7 +4,7 @@ import handleEscapeChars from "../../utils/handleEscapeChars";
 import { openai } from "./config";
 import { INSTRUCTIONS } from "../../constants/prompts";
 import { Message } from "../../models/chat/message.model";
-import schoolJsonToText from "../../utils/schoolJsonToText";
+import { schoolJsonToText } from "../../helpers/school";
 import { School } from "../../models/school/school.model";
 type ChatParams = {
 	question: string;
