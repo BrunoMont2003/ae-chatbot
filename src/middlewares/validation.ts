@@ -1,9 +1,9 @@
-import { Request, Response, NextFunction } from "express";
+import { Request, Response, NextFunction, RequestHandler } from "express";
 import { AnySchema, ValidateFunction } from "ajv";
 import { handleHttpError } from "../utils/handleError";
 
-const validationPipe = (validator: ValidateFunction<AnySchema>) => {
-	(req: Request, res: Response, next: NextFunction) => {
+const validationPipe = (validator: ValidateFunction<AnySchema>) : RequestHandler => {
+	return (req: Request, res: Response, next: NextFunction) => {
 		const { body } = req;
 
 		const result = validator(body);

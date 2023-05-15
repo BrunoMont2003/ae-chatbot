@@ -3,14 +3,11 @@ import { handleAxiosError } from "../utils/handleError";
 import { isAxiosError } from "axios";
 import { chat } from "../lib/openai/chat"; // openai
 import { ChatService } from "../services/app";
-import { validate } from "../validators/send-question.schema";
 import { sendMessageToWhatsapp } from "../services/external/whatsapp.service";
 
 const sendMessage = async (req: Request, res: Response) => {
 	try {
 		const { question, phone } = req.body;
-		if (!validate({ question, phone }))
-			return res.status(400).json(validate.errors);
 		const answer = await chat({ phone, question }); // openai
 		// save to db
 		// if the phone number is not in the db, create a new chat
