@@ -640,7 +640,7 @@ const schools: School[] = [
             },
             {
                 question: "¿Cómo es el proceso de regularización de matrícula?",
-                answer: ""
+                answer: 'Para el proceso de regularización de matrícula siga el siguiente procedimiento: 1. Llene la ficha de matrícula manual con los datos correspondientes de todos los cursos que desea llevar en el ciclo académico correspondiente. 2. Registre sus datos personales en el Formato Único de Trámite (FUT) y en el mismo marque con una "X" la opción "regularización de matrícula". 3. Realice el pago de S/. 20  4. Adjunte el voucher en la parte inferior del FUT 5. Diríjase a la oficina de registro técnico con los documentos impresos (ficha de matrícula manual y FUT con voucher adjunto)  6. Proporcione la ficha a su secretaria de escuela. Recordar que las fechas de regularización son comunicadas a través de la página oficial de la escuela de Ingeniería de Sistemas de Facebook :https://www.facebook.com/ingenieriadesistemasunt'
             },
             {
                 question: "¿Cuáles son los requisitos para solicitar obtener bachiller y título?",
@@ -649,6 +649,12 @@ const schools: School[] = [
             {
                 question: "¿Cuándo puedo obtener mi carnet universitario?",
                 answer: "Si ya has solicitado tu carnet universitario, puedes recogerlo el 22 de Mayo del 2023. Si aun no lo solicitas puedes hacerlo entrando al sistema de gestión de trámites de la UNT. Si no tiene cuenta, se puede crear una en la página."
+            },
+            {
+                question: "¿Dónde puedo obtener información de la Ficha de matrícula manual, o del Formato Único de Trámite (FUT), o del Procedimiento y requisitos de prácticas, o del Procedimiento de ingreso de carpetas trabajo suficiencia profesional?",
+
+                answer: "Lo puedes encontrar ingresando a la biblioteca virtual en el apartado de trámites: https://drive.google.com/drive/u/1/folders/1pgRlV4dVxYFQcEefkEV97jaCqOf60rqC "
+
             }
         ]
 
@@ -656,3 +662,4 @@ const schools: School[] = [
 ]
 
 export default schools;
+
