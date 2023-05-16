@@ -70,7 +70,7 @@ const schoolJsonToText = (school: School): string => {
 
 const needSchoolInfo = (message: string): boolean => {
     for (const keyword of KEYWORDS) {
-        if (message.includes(keyword)) {
+        if (message.includes(keyword.toLocaleLowerCase())) {
             console.log('Si se necesita la data de escuela');
             return true;
         }
@@ -81,7 +81,7 @@ const needSchoolInfo = (message: string): boolean => {
 
 const needSchoolFaqs = (message: string): boolean => {
     for (const keyword of FAQ_KEYWORDS) {
-        if (message.includes(keyword)) {
+        if (message.includes(keyword.toLocaleLowerCase())) {
             console.log('Si se necesitan las faqs');
             return true;
         }
