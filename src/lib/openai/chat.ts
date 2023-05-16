@@ -6,11 +6,14 @@ import { INSTRUCTIONS } from "../../constants/prompts";
 import { Message } from "../../models/chat/message.model";
 import { schoolJsonToText } from "../../helpers/school";
 import { School } from "../../models/school/school.model";
+import { isGreetingOrRandom } from "./isGreetingOrRandom";
+import { isGratitude } from "./isGratitude";
 type ChatParams = {
 	question: string;
 	phone: string;
 };
 export const chat = async ({ question, phone }: ChatParams) => {
+
 	let history: Message[] | null = [];
 	// find the last message
 	const lastMessage = await ChatService.getLastMessage(phone);
@@ -22,6 +25,14 @@ export const chat = async ({ question, phone }: ChatParams) => {
 		// FInd the chat history
 		history = await ChatService.getHistory(phone);
 	}
+	// check if the question is a greeting or a random question
+	if (history?.length === 0) {
+		const { isGreeting, response } = await isGreetingOrRandom({ message: question });
+		if (isGreeting) return response!;
+	}
+	// check if the question is a gratitude expression
+	const isGrat = await isGratitude({ message: question });
+	if (isGrat.isGratitude) return isGrat.response!;
 	const chat_history: {
 		content: string;
 		role: ChatCompletionResponseMessageRoleEnum;
