@@ -6,7 +6,7 @@ import { SchoolService } from "../services/app";
 const getSchool = async (req: Request, res: Response) => {
 	try {
 		const { slug } = req.params;
-		const school = await SchoolService.getSchoolBySlug({ slug });
+		const school = await SchoolService.getSchoolFaqs({ slug });
 		return res.status(200).json(school);
 	} catch (error: unknown) {
 		console.log(error);

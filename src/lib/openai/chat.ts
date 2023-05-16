@@ -4,10 +4,8 @@ import handleEscapeChars from "../../utils/handleEscapeChars";
 import { openai } from "./config";
 import { INSTRUCTIONS } from "../../constants/prompts";
 import { Message } from "../../models/chat/message.model";
-import { schoolJsonToText } from "../../helpers/school";
+import { needSchoolFaqs, needSchoolInfo, schoolJsonToText } from "../../helpers/school";
 import { School } from "../../models/school/school.model";
-import { isGreetingOrRandom } from "./isGreetingOrRandom";
-import { isGratitude } from "./isGratitude";
 type ChatParams = {
 	question: string;
 	phone: string;
@@ -25,14 +23,6 @@ export const chat = async ({ question, phone }: ChatParams) => {
 		// FInd the chat history
 		history = await ChatService.getHistory(phone);
 	}
-	// check if the question is a greeting or a random question
-	if (history?.length === 0) {
-		const { isGreeting, response } = await isGreetingOrRandom({ message: question });
-		if (isGreeting) return response!;
-	}
-	// check if the question is a gratitude expression
-	const isGrat = await isGratitude({ message: question });
-	if (isGrat.isGratitude) return isGrat.response!;
 	const chat_history: {
 		content: string;
 		role: ChatCompletionResponseMessageRoleEnum;
@@ -48,8 +38,19 @@ export const chat = async ({ question, phone }: ChatParams) => {
 			role: "assistant",
 		});
 	});
-	const schoolData = await SchoolService.getSchoolBySlug({ slug: "ing-sistemas" })
-	const schoolText = schoolJsonToText(schoolData?.toJSON() as School);
+	// check if the question needs faq
+	let schoolText = "";
+	const nsf = needSchoolFaqs(question);
+	if (nsf) {
+		const schoolData = await SchoolService.getSchoolFaqs({ slug: "ing-sistemas" })
+		schoolText = schoolJsonToText(schoolData?.toJSON() as School);
+	}
+	// check if the question needs school info
+	const nsi = needSchoolInfo(question);
+	if (nsi) {
+		const schoolData = await SchoolService.getSchoolBySlug({ slug: "ing-sistemas" })
+		schoolText += schoolJsonToText(schoolData?.toJSON() as School);
+	}
 	const { data } = await openai.createChatCompletion({
 		model: "gpt-3.5-turbo",
 		messages: [
