@@ -28,7 +28,8 @@ export const KEYWORDS = ["universidad", "asignaturas", "matrícula", "profesores
     "septimo", "octavo", "noveno", "decimo",
     "ciclo",
     "semestre",
-    "1er", "2do", "3er", "4to", "5to", "6to", "7mo", "8vo", "9no", "10mo",
+    "1er", "2do", "3er", "4to", "5to", "6to", "7mo", "8vo", "9no", "10mo","docente", "profesor", "enseña", "conoces a", "conoces de", "conoces",
+    "curso", "dicta", "dictan", "imparte", "imparten", "director"
 ]
 
 export const FAQ_KEYWORDS = [
@@ -159,5 +160,3 @@ export const CYCLES_EXPRESSIONS =
         "décimo"
     ],
 }
-
-
