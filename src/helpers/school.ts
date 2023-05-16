@@ -1,4 +1,4 @@
-import { FAQ_KEYWORDS, KEYWORDS, CYCLES_EXPRESSIONS } from "../constants/prompts";
+import { FAQ_KEYWORDS, KEYWORDS } from "../constants/prompts";
 import { School } from "../models/school/school.model";
 const schoolJsonToText = (school: School): string => {
     let textoFormateado = '';
@@ -90,18 +90,18 @@ const needSchoolFaqs = (message: string): boolean => {
     return false;
 }
 
-const needsCycleData = (message: string): {cycle: number, bool: boolean} => {
+// const needsCycleData = (message: string): {cycle: number, bool: boolean} => {
 
-    for (const cycle in CYCLES_EXPRESSIONS) {
-        if (message.includes(cycle)) {
-            console.log('Si se necesita la data de ciclo');
-            return {cycle: CYCLES_EXPRESSIONS.indexOf(cycle) + 1, bool: true};
-        }
-    }
+//     for (const cycle in CYCLES_EXPRESSIONS) {
+//         if (message.includes(cycle)) {
+//             console.log('Si se necesita la data de ciclo');
+//             return {cycle: CYCLES_EXPRESSIONS.indexOf(cycle) + 1, bool: true};
+//         }
+//     }
 
-    return {cycle: 0, bool: false};
+//     return {cycle: 0, bool: false};
 
-}
+// }
 
 
 export { schoolJsonToText, needSchoolInfo, needSchoolFaqs };

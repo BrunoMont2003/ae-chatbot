@@ -632,7 +632,7 @@ const schools: School[] = [
             },
             {
                 question: "¿Cómo es el proceso de matrícula?",
-                answer: "El proceso de matrícula es el siguiente: 1: Ingresar al Sistema Universitario Virtual (SUV).  2. Elegir cursos a matricular. 3. Generar orden de pago. 4. Pagar en un agente interbank. 5. Entregar orden de pago y voucher en la secretaría de tu escuela."
+                answer: "El proceso de matrícula es el siguiente: 1: Ingresar al Sistema Universitario Virtual (SUV) (http://suv2.unitru.edu.pe/portal/).  2. Elegir cursos a matricular. 3. Generar orden de pago. 4. Pagar en un agente interbank. 5. Entregar orden de pago y voucher en la secretaría de tu escuela."
             },
             {
                 question: "¿Cúal es el codigo de servicio para pagar en un agente interbank?",
