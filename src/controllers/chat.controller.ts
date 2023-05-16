@@ -40,6 +40,18 @@ const sendMessage = async (req: Request, res: Response) => {
 	}
 };
 
+const getChats = async (_: Request, res: Response) => {
+	try {
+		const chats = await ChatService.getChats();
+		return res.status(200).json(chats);
+	} catch (error: unknown) {
+		console.log(error);
+		if (isAxiosError(error)) return handleAxiosError(error, res);
+		return res.status(500).json({ error: "Something went wrong" });
+	}
+}
+
 export default {
 	sendMessage,
+	getChats
 };

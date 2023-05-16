@@ -35,10 +35,16 @@ const getLastMessage = async (phone: string) => {
 	return lastMessage;
 };
 
+const getChats = async () => {
+	const chats = await ChatModel.find();
+	return chats;
+}
+
 export default {
 	createChat,
 	findChatByPhone,
 	addMessageToChat,
 	getHistory,
-	getLastMessage
+	getLastMessage,
+	getChats
 };

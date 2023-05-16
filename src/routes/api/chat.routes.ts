@@ -7,5 +7,5 @@ import { formatPhoneNumber } from "../../middlewares/app";
 const router: Router = Router();
 
 router.post("/chat", formatPhoneNumber, validationPipe(validate), ChatController.sendMessage);
-
+router.get("/chats", ChatController.getChats);
 export default router;
