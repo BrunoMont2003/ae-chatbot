@@ -57,7 +57,7 @@ export const chat = async ({ question, phone }: ChatParams) => {
 				role: "user",
 			},
 		],
-		temperature: 0.2,
+		temperature: 0.1,
 	},
 	);
 	console.log("Total of tokens used: ", data.usage?.total_tokens ?? 0);

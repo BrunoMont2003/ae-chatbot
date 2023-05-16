@@ -5,58 +5,49 @@ const schoolJsonToText = (school: School): string => {
 
     // Información de la escuela
     if (school.name) {
-        textoFormateado += `Nombre de la escuela: ${school.name}\n`;
-    }
-    if (school.slug) {
-        textoFormateado += `Slug: ${school.slug}\n`;
+        textoFormateado += `A continuación, información sobre la escuela de ${school.name}\n`;
     }
     if (school.information) {
-        textoFormateado += `Información: ${school.information}\n`;
+        textoFormateado += `${school.information}\n`;
     }
 
     // Periodos
     if (school.periods && school.periods.length > 0) {
-        textoFormateado += '\nPeriodos:\n';
+        textoFormateado += '\nA continuación se muestran los ciclos de los ' + school.periods.length + '  periodos registrados e información relacionada a ello :\n';
         for (const period of school.periods) {
-            textoFormateado += `Año: ${period.year}\n`;
-            textoFormateado += `Inicio: ${period.start.toLocaleDateString()}\n`;
-            textoFormateado += `Fin: ${period.end.toLocaleDateString()}\n`;
-            textoFormateado += `Semestre: ${period.semester}\n`;
+            textoFormateado += `Periodo ${period.year}-${period.semester}: Inicio: ${period.start.toLocaleDateString()} - Fin: ${period.end.toLocaleDateString()}\n`
 
             // Ciclos
             if (period.cycles && period.cycles.length > 0) {
-                textoFormateado += '\nCiclos:\n';
+                textoFormateado += `\nA continuación se listan los Ciclos del periodo ${period.year}-${period.semester}:\n`;
                 for (const cycle of period.cycles) {
-                    textoFormateado += `Número: ${cycle.number}\n`;
+                    textoFormateado += `Ciclo ${cycle.number}:`;
 
                     // Materias
                     if (cycle.subjects && cycle.subjects.length > 0) {
-                        textoFormateado += '\nMaterias:\n';
+                        textoFormateado += `\nLas Materias del ciclo ${cycle.number} son:\n`;
                         for (const subject of cycle.subjects) {
-                            textoFormateado += `Nombre: ${subject.name}\n`;
-                            textoFormateado += `Créditos: ${subject.credits}\n`;
+                            textoFormateado += `${subject.name}, vale ${subject.credits} créditos `;
 
                             if (subject.professor) {
-                                textoFormateado += 'Profesor:\n';
-                                textoFormateado += `Nombre: ${subject.professor.name}\n`;
+                                textoFormateado += `y lo dicta el docente ${subject.professor.name}`;
                                 if (subject.professor.profession) {
-                                    textoFormateado += `Profesión: ${subject.professor.profession}\n`;
+                                    textoFormateado += `quien es ${subject.professor.profession}\n`;
                                 }
                             }
 
-                            if (subject.summary) {
-                                textoFormateado += `Resumen: ${subject.summary}\n`;
-                            }
-
                             if (subject.type) {
-                                textoFormateado += `Tipo: ${subject.type}\n`;
+                                textoFormateado += ` y es un curso ${subject.type == 'especialidad' ? 'de' : ''} ${subject.type}`;
                             }
 
                             textoFormateado += '\n';
                         }
+                        textoFormateado += '\n';
                     }
                 }
             }
+            textoFormateado += '\n';
+
         }
     }
 
@@ -64,7 +55,7 @@ const schoolJsonToText = (school: School): string => {
     if (school.faqs && school.faqs.length > 0) {
         textoFormateado += '\nPreguntas frecuentes:\n';
         for (const faq of school.faqs) {
-            if (faq.question) {
+            if (faq.question && faq.answer) {
                 textoFormateado += `Pregunta: ${faq.question}\n`;
             }
             if (faq.answer) {
