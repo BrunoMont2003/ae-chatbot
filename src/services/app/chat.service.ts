@@ -40,11 +40,17 @@ const getChats = async () => {
 	return chats;
 }
 
+const getChatById = async (id: string) => {
+	const chat = await ChatModel.findById(id);
+	return chat;
+}
+
 export default {
 	createChat,
 	findChatByPhone,
 	addMessageToChat,
 	getHistory,
 	getLastMessage,
-	getChats
+	getChats,
+	getChatById
 };
