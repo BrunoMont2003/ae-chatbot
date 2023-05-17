@@ -141,4 +141,5 @@ export const FAQ_KEYWORDS: string[] = [
     "aulas",
     "aula",
     "donde son las clases",
+"nota","mínima,"notas","mínimo","mínimas","mínimos","minima","minimo","minimas","minimos","puntaje",
 ];
