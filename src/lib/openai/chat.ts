@@ -47,7 +47,7 @@ export const chat = async ({ question, phone }: ChatParams) => {
 	}
 	// check if the question needs school info
 	const nsi = needSchoolInfo(question);
-	if (nsi) {
+	if (!nsf && nsi) {
 		const schoolData = await SchoolService.getSchoolBySlug({ slug: "ing-sistemas" })
 		schoolText += schoolJsonToText(schoolData?.toJSON() as School);
 	}
