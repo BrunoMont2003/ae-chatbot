@@ -655,6 +655,54 @@ const schools: School[] = [
 
                 answer: "Lo puedes encontrar ingresando a la biblioteca virtual en el apartado de trámites: https://drive.google.com/drive/u/1/folders/1pgRlV4dVxYFQcEefkEV97jaCqOf60rqC "
 
+            },
+            {
+                question: "¿Qué es un sustitutorio?",
+                answer: "Es una prueba que se toma por lo general en las últimas dos semanas que viene el contenido de las tres unidades y reemplaza la nota de unidad más baja de forma automática (sí hubiese dos, sería al primero). Si hay 30% de desaprobados en el curso, es obligatorio para el docente tomarlo"
+            },
+            {
+                question: "¿Qué es un aplazado?",
+                answer: "es una prueba que se toma en la última semana de clase (después de los exámenes de tercera unidad), que viene los temas de las tres unidades y se promedia con peso uno al promedio del curso."
+            },
+            {
+                question: "¿Cómo puedo solicitar un sustitorio o aplazado?",
+                answer: ". Para solicitarlo, rellenar un FUT (Formato único de trámite) y coordinar con el docente. El FUT se encuentra publicado en el fanpage de ingeniería de sistemas de la UNT. Tanto para sustitutorio y aplazado, si el promedio del curso es menor a 8, no puede rendir el aplazado/sustitutorio"
+            },
+            {
+                question: "¿Cómo accedo al comedor universitario?",
+                answer: "Para poder acceder del comedor univeristario deberás dirigirte al segundo piso de bienestar universitario para consultar sobre información, requisitos y plazos para ir o acceder a la beca."
+            },
+            {
+                question: "¿Cuál es la nota mínima aprobatoria?",
+                answer: "La nota mínima aprobatoria es 14"
+            },
+            {
+                question: "¿Dónde son las clases de laboratorio?",
+                answer: "Las clases de laboratorio son en el segundo piso de registro técnico"
+            },
+            {
+                question: "¿Dónde se encuentra registro técnico?",
+                answer: "Registro técnico se encuentra ingresando por la tercera puerta de la universidad, frente al pabellón de enfermería"
+            },
+            {
+                question: "¿Dónde se encuentra bienestar universitario?",
+                answer: "Bienestar universitario se encuentra ingresando por la tercera puerta de la universidad, pasando registro técnico."
+            },
+            {
+                question: "¿Dónde son las clases de teoría?",
+                answer: "La mayoría de las clases de teoría son en el tercer piso del pabellón de posgrado, que se encuentra ingresando por la segunda puerta de la universidad."
+            },
+            {
+                question: "¿Hay gimnasio en la universidad?",
+                answer: "Sí, el gimnasio se encuentra en Jirón Independencia 186, Trujillo 13001, en el antiguo Comedor Universitario. Para poder acceder al gym necesitar estar atento a la convocatoria que se publica en la página de facebook de la escuela de la universidad. Si necesitas más información, dirígete a la oficina de bienestar universitario (3er piso)."
+            },
+            {
+                question: "¿Qué talleres hay en la universidad?",
+                answer: "Hay danzas folclóricas, orfeón universitario, banda de musicos, grupo de música, teatro. Más información se encuentra en la página de facebook del centro cultural universitario."
+            },
+            {
+                question: "¿Qué tallers de deporte hay en la universidad?",
+                answer: "Hay futbol, basket, voley, ajedrez, karate. Para más información dirígete a la oficina de bienestar universitario (3er piso)."
             }
         ]
 
