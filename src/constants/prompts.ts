@@ -16,12 +16,8 @@ export const THANKS_PHRASES = [
     'perfecto',
 ]
 
-export const KEYWORDS = ["universidad", "asignaturas", "matrícula", "profesores",
-    "docentes", "cursos", "ciclos", "semestres", "carrera", "escuela", "académica",
-    "ingeniería", "sistemas", "trujillo", "perú", "peru", "peruana", "peruano",
-    "peruanos", "peruanas", "universitaria", "universitario", "universitarios",
-    "universitarias", "universidades", "universidad nacional de trujillo",
-    "unt", "informacion", "información",
+export const KEYWORDS = ["asignaturas", "profesores",
+    "docentes", "cursos", "ciclos", "semestres",
     "1", "2", "3", "4", "5", "6", "7", "8", "9", "10",
     "primero", "segundo", "tercero", "cuarto", "quinto", "sexto",
     "primer", "segundo", "tercer", "cuarto", "quinto", "sexto",
@@ -32,12 +28,14 @@ export const KEYWORDS = ["universidad", "asignaturas", "matrícula", "profesores
     "curso", "dicta", "dictan", "imparte", "imparten", "director"
 ]
 
-export const FAQ_KEYWORDS = [
+export const FAQ_KEYWORDS: string[] = [
     "secretaría",
     "secretaria",
     "numero secretaria",
     "número secretaria",
     "teléfono",
+    "whatsapp",
+    "numero",
     "telefono",
     "correo",
     "horario",
@@ -82,89 +80,56 @@ export const FAQ_KEYWORDS = [
     "regularizar",
     "pagar",
     "pago",
-]
-
-
-export const CYCLES_EXPRESSIONS =
-{
-    1: [
-        "primer ciclo",
-        "primer ciclo académico",
-        "ciclo 1",
-        "1er ciclo",
-        "1ero",
-        "primero"
-    ],
-    2: [
-        "segundo ciclo",
-        "segundo ciclo académico",
-        "ciclo 2",
-        "2do ciclo",
-        "2do",
-        "segundo"
-    ],
-    3: [
-        "tercer ciclo",
-        "tercer ciclo académico",
-        "ciclo 3",
-        "3er ciclo",
-        "3er",
-        "tercero"
-    ],
-    4: [
-        "cuarto ciclo",
-        "cuarto ciclo académico",
-        "ciclo 4",
-        "4to ciclo",
-        "4to",
-        "cuarto"
-    ],
-    5: [
-        "quinto ciclo",
-        "quinto ciclo académico",
-        "ciclo 5",
-        "5to ciclo",
-        "5to",
-        "quinto"
-    ],
-    6: [
-        "sexto ciclo",
-        "sexto ciclo académico",
-        "ciclo 6",
-        "6to ciclo",
-        "6to",
-        "sexto"
-    ],
-    7: [
-        "séptimo ciclo",
-        "séptimo ciclo académico",
-        "ciclo 7",
-        "7mo ciclo",
-        "7mo",
-        "séptimo"
-    ],
-    8: [
-        "octavo ciclo",
-        "octavo ciclo académico",
-        "ciclo 8",
-        "8vo ciclo",
-        "8vo",
-        "octavo"
-    ],
-    9: [
-        "noveno ciclo",
-        "noveno ciclo académico",
-        "ciclo 9",
-        "9no ciclo",
-        "9no",
-        "noveno"
-    ],
-    10: [
-        "décimo ciclo",
-        "décimo ciclo académico",
-        "ciclo 10",
-        "10mo ciclo",
-        "10mo",
-        "décimo"
-    ],
-}
+    "susti",
+    "sustis",
+    "sustitutorio",
+    "recuperación",
+    "recuperacion",
+    "aplazado",
+    "aplazados",
+    "bienestar",
+    "beca",
+    "becas",
+    "becado",
+    "comedores",
+    "comedor",
+    "requisitos",
+    "requisito",
+    "plazos",
+    "plazo",
+    "convocatoria",
+    "convocatorias",
+    "gimnasios",
+    "gimnasio",
+    "gym",
+    "deporte",
+    "taller",
+    "talleres",
+    "técnico",
+    "tecnico",
+    "fútbol",
+    "futbol",
+    "vóley",
+    "voley",
+    "básquet",
+    "basquet",
+    "básquetbol",
+    "basquetbol",
+    "básquetball",
+    "basquetball",
+    "FUT",
+    "reprobar",
+    "jalar",
+    "jalo",
+    "repruebo",
+    "apruebo",
+    "jalé",
+    "reprobé",
+    "aprobé",
+    "reprobado",
+    "aprobado",
+    "reprobada",
+    "aprobada",
+    "reprobados",
+    "aprobados",
+];
