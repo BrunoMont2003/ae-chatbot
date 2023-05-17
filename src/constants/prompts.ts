@@ -132,4 +132,13 @@ export const FAQ_KEYWORDS: string[] = [
     "aprobada",
     "reprobados",
     "aprobados",
+    "teoría",
+    "teoria",
+    "laboratorio",
+    "laboratorios",
+    "lab",
+    "labs",
+    "aulas",
+    "aula",
+    "donde son las clases",
 ];
