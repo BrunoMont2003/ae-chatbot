@@ -32,8 +32,8 @@ const post = async (req: Request, res: Response) => {
             });
         }
         res.sendStatus(200);
-    } catch (error) {
-        console.log("Error in webhook", error);
+    } catch (error: any) {
+        console.log("Error in webhook", error?.message || error);
         res.sendStatus(500);
     }
 }
