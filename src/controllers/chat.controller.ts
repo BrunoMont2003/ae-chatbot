@@ -40,6 +40,22 @@ const sendMessage = async (req: Request, res: Response) => {
 	}
 };
 
+const outOfService = async (req: Request, res: Response) => {
+	try {
+		const { phone } = req.body;
+		const answer = "Lo siento, no estoy disponible en este momento";
+		// save to db
+		// Send message to whatsapp number
+		const wsp_res = await sendMessageToWhatsapp({ phone, text: answer })
+		if (wsp_res.status !== 200) throw wsp_res;
+		return res.status(200).json({ answer });
+	} catch (error: unknown) {
+		console.log(error);
+		if (isAxiosError(error)) return handleAxiosError(error, res);
+		return res.status(500).json({ error: "Something went wrong" });
+	}
+}
+
 const getChats = async (_: Request, res: Response) => {
 	try {
 		const chats = await ChatService.getChats();
@@ -65,5 +81,6 @@ const getChat = async (req: Request, res: Response) => {
 export default {
 	sendMessage,
 	getChats,
-	getChat
+	getChat,
+	outOfService
 };
