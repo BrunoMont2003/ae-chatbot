@@ -53,7 +53,7 @@ const schoolJsonToText = (school: School): string => {
 
     // FAQs
     if (school.faqs && school.faqs.length > 0) {
-        textoFormateado += '.Preguntas frecuentes:.';
+        textoFormateado += '.Preguntas frecuentes (evita mencionar a la escuela y la universidad en cada respuesta pues no es necesario):.';
         for (const faq of school.faqs) {
             if (faq.question && faq.answer) {
                 textoFormateado += `Pregunta: ${faq.question}.`;

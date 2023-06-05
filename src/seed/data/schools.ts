@@ -79,22 +79,22 @@ const schools: School[] = [
                             {
                                 name: "Taller de Liderazgo y Trabajo en Equipo",
                                 credits: 1,
-                                type: "optativo",
+                                type: "electivo",
                             },
                             {
                                 name: "Taller de Música",
                                 credits: 1,
-                                type: "optativo",
+                                type: "electivo",
                             },
                             {
                                 name: "Taller de Comunicación Eficaz",
                                 credits: 1,
-                                type: "optativo",
+                                type: "electivo",
                             },
                             {
                                 name: "Taller de Teatro",
                                 credits: 1,
-                                type: "optativo",
+                                type: "electivo",
                             }
                         ],
 
@@ -126,7 +126,7 @@ const schools: School[] = [
                             {
                                 name: "Ingeniería Gráfica",
                                 credits: 3,
-                                type: "optativo",
+                                type: "electivo",
                                 professor: {
                                     name: "Juan Obando Roldán"
                                 }
@@ -134,7 +134,7 @@ const schools: School[] = [
                             {
                                 name: "Sicología Organizacional",
                                 credits: 3,
-                                type: "optativo",
+                                type: "electivo",
                                 professor: {
                                     name: "Sheyla Escobedo Martínez"
                                 }
@@ -221,7 +221,7 @@ const schools: School[] = [
                             {
                                 name: "Teleinformática",
                                 credits: 3,
-                                type: "optativo",
+                                type: "electivo",
                                 professor: {
                                     name: "Camilo Suarez Rebaza"
                                 }
@@ -229,7 +229,7 @@ const schools: School[] = [
                             {
                                 name: "Transformación Digital",
                                 credits: 3,
-                                type: "optativo",
+                                type: "electivo",
                                 professor: {
                                     name: "David Agreda Gamboa"
                                 }
@@ -275,7 +275,7 @@ const schools: School[] = [
                             {
                                 name: "Negocios Electrónicos",
                                 credits: 3,
-                                type: "optativo",
+                                type: "electivo",
                                 professor: {
                                     name: "David Agreda Gamboa"
                                 }
@@ -299,7 +299,7 @@ const schools: School[] = [
                             {
                                 name: "Administración de Base de Datos",
                                 credits: 3,
-                                type: "optativo",
+                                type: "electivo",
                                 professor: {
                                     name: "Ricardo Mendoza Rivera"
                                 }
@@ -336,7 +336,7 @@ const schools: School[] = [
                             {
                                 name: "Hackeo Ético",
                                 credits: 3,
-                                type: "optativo",
+                                type: "electivo",
                                 professor: {
                                     name: "Camilo Suarez Rebaza"
                                 }
@@ -360,7 +360,7 @@ const schools: School[] = [
                             {
                                 name: "Auditoria Informática",
                                 credits: 3,
-                                type: "optativo",
+                                type: "electivo",
                                 professor: {
                                     name: "Alberto Mendoza De los Santos"
                                 }
@@ -368,7 +368,7 @@ const schools: School[] = [
                             {
                                 name: "Empredimiento Tecnológico",
                                 credits: 3,
-                                type: "optativo",
+                                type: "electivo",
                                 professor: {
                                     name: "Oscar Alcántara Moreno"
                                 }
@@ -404,7 +404,7 @@ const schools: School[] = [
                             {
                                 name: "Física General",
                                 credits: 4,
-                                type: "optativo",
+                                type: "electivo",
                             },
                             {
                                 name: "Programación Orientada a Objetos I",
@@ -422,7 +422,7 @@ const schools: School[] = [
                             {
                                 name: "Taller de Deporte",
                                 credits: 1,
-                                type: "optativo",
+                                type: "electivo",
                             },
                         ]
                     },
@@ -432,12 +432,12 @@ const schools: School[] = [
                             {
                                 name: 'Computación Gráfica Y Visual',
                                 credits: 3,
-                                type: 'optativo'
+                                type: 'electivo'
                             },
                             {
                                 name: 'Plataformas Tecnológicas',
                                 credits: 3,
-                                type: 'optativo'
+                                type: 'electivo'
                             },
                             {
                                 name: 'Diseño Web',
@@ -491,7 +491,7 @@ const schools: School[] = [
                             {
                                 name: "Gestión del Talento Humano",
                                 credits: 3,
-                                type: "optativo",
+                                type: "electivo",
                             },
                             {
                                 name: "Ingeniería de Datos II",
@@ -569,12 +569,12 @@ const schools: School[] = [
                             {
                                 name: "Deontología y Derecho Informático",
                                 credits: 3,
-                                type: "optativo",
+                                type: "electivo",
                             },
                             {
                                 name: "Arquitectura basada en Microservicios",
                                 credits: 3,
-                                type: "optativo",
+                                type: "electivo",
                             }
                         ]
                     },
@@ -704,10 +704,6 @@ const schools: School[] = [
                 question: "¿Qué talleres de deporte hay en la universidad?",
                 answer: "Hay futbol, basket, voley, ajedrez, karate. Para más información dirígete a la oficina de bienestar universitario (3er piso)."
             },
-            {
-                question: "¿?",
-                answer: "",
-            }
         ]
 
     }
