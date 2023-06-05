@@ -643,7 +643,7 @@ const schools: School[] = [
                 answer: 'Para el proceso de regularización de matrícula siga el siguiente procedimiento: 1. Llene la ficha de matrícula manual con los datos correspondientes de todos los cursos que desea llevar en el ciclo académico correspondiente. 2. Registre sus datos personales en el Formato Único de Trámite (FUT) y en el mismo marque con una "X" la opción "regularización de matrícula". 3. Realice el pago de S/. 20  4. Adjunte el voucher en la parte inferior del FUT 5. Diríjase a la oficina de registro técnico con los documentos impresos (ficha de matrícula manual y FUT con voucher adjunto)  6. Proporcione la ficha a su secretaria de escuela. Recordar que las fechas de regularización son comunicadas a través de la página oficial de la escuela de Ingeniería de Sistemas de Facebook :https://www.facebook.com/ingenieriadesistemasunt'
             },
             {
-                question: "¿Cuáles son los requisitos para solicitar obtener bachiller y título?",
+                question: "¿Cuáles son los requisitos para obtener bachiller y título?",
                 answer: ""
             },
             {
@@ -701,7 +701,7 @@ const schools: School[] = [
                 answer: "Hay danzas folclóricas, orfeón universitario, banda de musicos, grupo de música, teatro. Más información se encuentra en la página de facebook del centro cultural universitario."
             },
             {
-                question: "¿Qué tallers de deporte hay en la universidad?",
+                question: "¿Qué talleres de deporte hay en la universidad?",
                 answer: "Hay futbol, basket, voley, ajedrez, karate. Para más información dirígete a la oficina de bienestar universitario (3er piso)."
             }
         ]
