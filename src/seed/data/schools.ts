@@ -628,7 +628,7 @@ const schools: School[] = [
         faqs: [
             {
                 question: "¿Cuál es el horario de atención y el numero de contacto de la secretaría de Ingenería de Sistemas?",
-                answer: "El horario de atención de la secretaría de Ingenería de Sistemas es desde las 8:00 am hasta las 2:00 pm. Puedes comunicarte con la secretaria de tu escuela al número 970 025 212"
+                answer: "El horario de atención de la secretaría de Ingenería de Sistemas es de lunes a viernes desde las 8:00 am hasta las 2:00 pm. Puedes comunicarte con la secretaria de tu escuela al número 970 025 212"
             },
             {
                 question: "¿Cómo es el proceso de matrícula?",
@@ -653,7 +653,7 @@ const schools: School[] = [
             {
                 question: "¿Dónde puedo obtener información de la Ficha de matrícula manual, o del Formato Único de Trámite (FUT), o del Procedimiento y requisitos de prácticas, o del Procedimiento de ingreso de carpetas trabajo suficiencia profesional?",
 
-                answer: "Lo puedes encontrar ingresando a la biblioteca virtual en el apartado de trámites: https://drive.google.com/drive/u/1/folders/1pgRlV4dVxYFQcEefkEV97jaCqOf60rqC "
+                answer: "Lo puedes encontrar ingresando a la biblioteca virtual de la escuela de Ingeniería de Sistemas en el apartado de trámites: https://drive.google.com/drive/u/1/folders/1pgRlV4dVxYFQcEefkEV97jaCqOf60rqC "
 
             },
             {
@@ -673,7 +673,7 @@ const schools: School[] = [
                 answer: "Para poder acceder del comedor univeristario deberás dirigirte al segundo piso de bienestar universitario para consultar sobre información, requisitos y plazos para ir o acceder a la beca."
             },
             {
-                question: "¿Cuál es la nota mínima aprobatoria?",
+                question: "¿Cuál es la nota mínima aprobatoria? o ¿cuál es la nota aprobatoria?",
                 answer: "La nota mínima aprobatoria es 14"
             },
             {
@@ -703,6 +703,10 @@ const schools: School[] = [
             {
                 question: "¿Qué talleres de deporte hay en la universidad?",
                 answer: "Hay futbol, basket, voley, ajedrez, karate. Para más información dirígete a la oficina de bienestar universitario (3er piso)."
+            },
+            {
+                question: "¿?",
+                answer: "",
             }
         ]
 
