@@ -20,7 +20,7 @@ export class Subject {
 	summary?: string;
 
 	@prop()
-	type?: 'obligatorio' | 'optativo' | 'especialidad';
+	type?: 'obligatorio' | 'electivo' | 'especialidad';
 
 	
 
